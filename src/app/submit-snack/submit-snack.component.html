@@ -1,0 +1,46 @@
+
+<mat-list>
+
+    <mat-form-field appearance="standard" mat-list-item>
+        <mat-label>Name Your Snack</mat-label>
+        <input matInput placeholder="What'll it be? " autocomplete="off">
+        <mat-hint>ex: Apples & Cheese</mat-hint>
+    </mat-form-field>
+
+    <br> 
+
+    <mat-form-field appearance="standard" mat-list-item style="width:100%;">
+        <mat-label>Ingredients</mat-label>
+        <textarea matInput style="height:50px;" placeholder="
+        1. Golden Delicious Apple
+        2. Extra Sharp Cheddar Cheese
+        "></textarea>
+        <mat-hint>What's it need?</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field appearance="standard" mat-list-item style="width:100%;">
+        <mat-label>Directions</mat-label>
+        <textarea matInput style="height:90px;" placeholder="
+        1. Cut the Apple
+        2. Cut the Cheese
+        3. Plate the Apple & Cheese
+        4. Enjoy !!
+        "></textarea>
+        <mat-hint>How's it done?</mat-hint>
+    </mat-form-field>
+
+    <div mat-list-item>
+        <br>
+        <mat-card-title style="padding-bottom:10px;">🍓 What's it like? 🧀</mat-card-title>
+        <app-chips-multi-select [options]="snacktags"></app-chips-multi-select>
+    </div>
+
+    <br>
+
+    <button style="width:100%" mat-raised-button color="primary" routerLink="/">Submit Snack <span class="icon">🥪</span></button>
+
+    <br><br>
+
+</mat-list>
+
+
